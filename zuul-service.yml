@@ -10,7 +10,7 @@
 
   # Disable accessing services using service name
 zuul:
-  ignored-services: *
+  ignored-services: "*"
 
   # Map paths to product service
   routes:
