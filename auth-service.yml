@@ -14,6 +14,3 @@ encryption:
 
 services:
   userService: user-service
-
-test:
-  mest: something-test-mest
