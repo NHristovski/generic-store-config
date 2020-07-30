@@ -44,4 +44,6 @@ security:
     expiration: 86400
     secret: Tmlrb2xhU2VjcmV0S2V5IA0K
 
+test:
+  mest: zest
 #logging:level:org:springframework:DEBUG

@@ -11,3 +11,6 @@ security:
 
 encryption:
   key: strong_security
+
+test:
+  mest: something-test-mest
