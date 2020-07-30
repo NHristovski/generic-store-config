@@ -13,8 +13,7 @@ encryption:
   key: strong_security
 
 service:
-  user:
-    id: user-service
+  userService: user-service
 
 test:
   mest: something-test-mest
