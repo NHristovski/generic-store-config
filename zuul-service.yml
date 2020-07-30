@@ -1,0 +1,47 @@
+#server:
+#  port: 8762
+#spring:
+#  application:
+#    name: zuul-server
+#  eureka:
+#    client:
+#      service-url:
+#        defaultZone: http://localhost:8761/eureka
+
+  # Disable accessing services using service name
+zuul:
+  ignored-services: *
+
+  # Map paths to product service
+  routes:
+    worker-service:
+      path: /product/**
+      service-id: product-service
+
+  # Map path to auth service
+
+    auth-service:
+      path: /auth/**
+      service-id: auth-service
+      strip-prefix: false
+      sensitive-headers: Cookie,Set-Cookie
+
+  # Map paths to users service
+    user-service:
+      path: /users/**
+      service-id: user-service
+
+
+#management:trace:http:include:AUTHORIZATION_HEADER,COOKIE_HEADERS,PRINCIPAL,REMOTE_ADDRESS,REQUEST_HEADERS,RESPONSE_HEADERS,SESSION_ID,TIME_TAKEN
+#
+#management:endpoints:web:exposure:include:httptrace
+
+security:
+  jwt:
+    uri: /auth/**
+    header: Authorization
+    prefix: Bearer
+    expiration: 86400
+    secret: Tmlrb2xhU2VjcmV0S2V5IA0K
+
+#logging:level:org:springframework:DEBUG
