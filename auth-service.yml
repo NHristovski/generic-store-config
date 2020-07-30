@@ -12,7 +12,7 @@ security:
 encryption:
   key: strong_security
 
-service:
+services:
   userService: user-service
 
 test:
