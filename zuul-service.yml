@@ -18,6 +18,9 @@ zuul:
       path: /product/**
       service-id: product-service
 
+    rating-service:
+      path: /ratings/**
+      service-id: rating-service
   # Map path to auth service
 
     auth-service:
