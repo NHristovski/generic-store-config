@@ -27,6 +27,10 @@ zuul:
       service-id: inventory-service
     # Map path to auth service
 
+    shopping-cart-service:
+      path: /shopping-cart/**
+      service-id: shopping-cart-service
+
     auth-service:
       path: /auth/**
       service-id: auth-service
