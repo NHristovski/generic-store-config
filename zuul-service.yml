@@ -1,12 +1,12 @@
 server:
   port: 8762
-#spring:
-#  application:
-#    name: zuul-server
-#  eureka:
-#    client:
-#      service-url:
-#        defaultZone: http://localhost:8761/eureka
+  #spring:
+  #  application:
+  #    name: zuul-server
+  #  eureka:
+  #    client:
+  #      service-url:
+  #        defaultZone: http://localhost:8761/eureka
 
   # Disable accessing services using service name
 zuul:
@@ -21,7 +21,11 @@ zuul:
     rating-service:
       path: /ratings/**
       service-id: rating-service
-  # Map path to auth service
+
+    inventory-service:
+      path: /inventory/**
+      service-id: inventory-service
+    # Map path to auth service
 
     auth-service:
       path: /auth/**
@@ -29,7 +33,7 @@ zuul:
       strip-prefix: false
       sensitive-headers: Cookie,Set-Cookie
 
-  # Map paths to users service
+    # Map paths to users service
     user-service:
       path: /users/**
       service-id: user-service
