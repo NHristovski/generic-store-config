@@ -12,6 +12,10 @@ server:
 zuul:
   ignored-services: "*"
 
+  ribbon:
+    eager-load:
+      enabled: true
+
   retryable: true
   # Map paths to product service
   routes:
