@@ -12,6 +12,7 @@ server:
 zuul:
   ignored-services: "*"
 
+  retryable: true
   # Map paths to product service
   routes:
     worker-service:
