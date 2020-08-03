@@ -60,7 +60,7 @@ zuul:
 
     # Map paths to users service
     user-service:
-      path: /users/**
+      path: /users/public/**
       service-id: user-service
 
     payment-service:
