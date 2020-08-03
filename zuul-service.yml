@@ -48,7 +48,7 @@ zuul:
       service-id: user-service
 
     payment-service:
-      path: /paymnet/**
+      path: /payment/**
       service-id: payment-service
 
 
