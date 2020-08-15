@@ -67,6 +67,10 @@ zuul:
       path: /payment/**
       service-id: payment-service
 
+    order-service:
+      path: /orders/**
+      service-id: order-service
+
 
 #management:trace:http:include:AUTHORIZATION_HEADER,COOKIE_HEADERS,PRINCIPAL,REMOTE_ADDRESS,REQUEST_HEADERS,RESPONSE_HEADERS,SESSION_ID,TIME_TAKEN
 #
