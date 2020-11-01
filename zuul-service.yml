@@ -85,6 +85,3 @@ security:
     secret: Tmlrb2xhU2VjcmV0S2V5IA0K
 
 #logging:level:org:springframework:DEBUG
-spring:
-  zipkin:
-    baseUrl: http://192.168.0.222:9411/
