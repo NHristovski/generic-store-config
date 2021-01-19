@@ -18,4 +18,4 @@ services:
 
 spring:
   zipkin:
-    baseUrl: http://192:168:0:222:9411/
+    baseUrl: http://34.107.100.32:9411/
